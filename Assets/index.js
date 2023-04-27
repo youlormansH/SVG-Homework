@@ -16,7 +16,7 @@ inquirer.prompt(
 
 }]
 ).then(answer =>{
-    if(answer.shape == "circule"){
+    if(answer.shape == "circle"){
         let shape = new Circle(answer.color)
         console.log(shape)
         const renderedShape = shape.render()
