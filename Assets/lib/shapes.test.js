@@ -1,4 +1,4 @@
-const {Circle , Triangle, square} = require('./shapes')
+const {Circle , Triangle, Square} = require('./shapes')
 
 
 describe("Circle", ()=>{
@@ -12,12 +12,21 @@ test("test render green circle", ()=>{
 
 
 //describe 
-describe("triagle", ()=>{
-    test("test render green triangle", ()=>{
-        const shape = new Circle('blue');
+describe("Triagle", ()=>{
+    test("test render green Triangle", ()=>{
+        const shape = new Triangle('blue');
         shape.setColor("blue");
-        expect(shape.render()).toEqual('put somthing here  "/>');
+        expect(shape.render()).toEqual('<triagle cx="25" cy="75" r="20" fill="blue"/>"/>');
     })
     
     })
     
+    describe("square", ()=>{
+        test("test render white circle", ()=>{
+            const shape = new Square('white');
+            shape.setColor("white");
+            expect(shape.render()).toEqual('<square cx="25" cy="75" r="20" fill="green"/>');
+        })
+        
+        })
+        

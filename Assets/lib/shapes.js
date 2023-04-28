@@ -13,15 +13,15 @@ class Shape{
     //class Triangle extends 
     class Triangle extends Shape{
         render(){
-            return ``
+            return `put something here`
         }
 
     }
 
     class square extends Shape{
         render(){
-            return``
+            return`here `
         }
     }
 
-    module.exports = {Circle, Triangle, square};
+    module.exports = {Circle, Triangle, Square};
