@@ -34,14 +34,14 @@ inquirer.prompt(
   console.log(answer)
     if(answer.shape == "circle"){
         let shape = new Circle()
-        shape.setColor("green")
+        shape.setColor(answer)
         console.log(shape)
          renderedShape = shape.render()
         console.log(renderedShape)
     }
     else if(answer.shape == "triangle"){
         let shape = new Triangle()
-        shape.setColor("blue")
+        shape.setColor(answer.shapecolor)
         console.log(shape)
          renderedShape = shape.render()
         console.log(renderedShape)
